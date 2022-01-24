@@ -1,0 +1,21 @@
+Package: ido
+Title: Indirect Data Object Management
+Version: 0.0.0.9000
+Authors@R: 
+    person("Steven", "Eschrich", , "Steven.Eschrich@moffitt.org", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: A common problem with R in practice is that CRAN and other sites (including github)
+ limit the size of a package. When considering really large datasets, or potentially controlled
+ access datasets, the data package approach does not work well. There are a variety of solutions,
+ including drat and stashr, which offer alternatives. Here, we provide a lightweight package that
+ uses indirection (in the form of a configuration file) to redirect a typical data command to
+ a secondary URL.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports:
+ cli,
+ config,
+ rappdirs,
+ stringr
